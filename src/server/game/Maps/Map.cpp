@@ -236,7 +236,7 @@ void Map::UpdatePartitionEntities(uint32 partitionId, uint32 diff)
     }
 }
 
-void Map::UpdatePostPartition(uint32 t_diff, uint32 s_diff)
+void Map::UpdatePostPartition(uint32 t_diff, uint32 /*s_diff*/)
 {
     // === Serial post-phase: finalize after parallel entity updates ===
     _inParallelPhase.store(false, std::memory_order_release);
